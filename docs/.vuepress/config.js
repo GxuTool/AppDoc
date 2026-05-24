@@ -12,7 +12,46 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: 'https://gitlab.unde.site/uploads/-/system/appearance/logo/1/DE36B41263F10D046C9449C45B69DF67.png',
 
-    navbar: ['/', '/main','/logs', 'QA'],
+    navbar: [
+      { text: '首页', link: '/' },
+      { text: '基础教程', link: '/guide/main.html' },
+      { text: '工具使用', link: '/tools/toolUse.html' },
+      { text: '软件设置', link: '/settings/appSet.html' },
+      { text: '常见问题', link: '/QA.html' },
+      { text: '声明', link: '/statement.html' },
+      { text: '版本日志', link: '/logs.html' },
+    ],
+
+    sidebar: [
+      {
+        text: '基础教程',
+        children: [
+          { text: '登录', link: '/guide/main.html#登录' },
+          { text: '首页', link: '/guide/main.html#首页' },
+          { text: '日程表', link: '/guide/main.html#日程表' },
+        ],
+      },
+      {
+        text: '工具使用',
+        children: [
+          { text: '工具使用说明', link: '/tools/toolUse.html' },
+        ],
+      },
+      {
+        text: '软件设置',
+        children: [
+          { text: '设置说明', link: '/settings/appSet.html' },
+        ],
+      },
+      {
+        text: '其他',
+        children: [
+          { text: '常见问题', link: '/QA.html' },
+          { text: '声明', link: '/statement.html' },
+          { text: '版本日志', link: '/logs.html' },
+        ],
+      },
+    ],
   }),
 
   bundler: viteBundler(),
