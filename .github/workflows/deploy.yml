@@ -1,0 +1,42 @@
+name: 自动部署文档
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: 拉取最新代码
+        uses: actions/checkout@v4
+
+      - name: 配置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 安装依赖包
+        run: npm ci
+
+      - name: 编译 VuePress 静态文档
+        run: npm run docs:build
+
+      - name: 将产物打包进 Docker 镜像
+        run: |
+          # 告诉 Docker 以当前目录下的 Dockerfile 为图纸，把刚编译好的产物包成镜像
+          docker build -t jwtool-doc:latest .
+
+      - name: 重启并拉起新容器
+        run: |
+          docker stop jwtool-doc || true
+          docker rm jwtool-doc || true
+          
+          # --restart unless-stopped 保证它开机自启
+          docker run -d --name jwtool-doc --restart unless-stopped -p 7533:80 jwtool-doc:latest
+          
+          # 清理那些没有名字的旧版本废弃镜像（释放磁盘空间）
+          docker image prune -f
