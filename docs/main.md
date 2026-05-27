@@ -46,7 +46,7 @@
 
 ### 期末学生评价
 
-支持一键评价。（ToDo）
+支持一键评价。
 
 [routing]: https://vuejs.press/guide/page.html#routing
 [content]: https://vuejs.press/guide/page.html#content
