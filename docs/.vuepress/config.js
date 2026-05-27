@@ -1,6 +1,7 @@
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { markdownHintPlugin } from '@vuepress/plugin-markdown-hint'
 
 export default defineUserConfig({
   base: '/',
@@ -43,6 +44,10 @@ export default defineUserConfig({
 
     ],
   }),
-
+  plugins:[
+    markdownHintPlugin({
+      hint:true,
+      alert:true,}),
+  ],
   bundler: viteBundler(),
 })
