@@ -4,7 +4,7 @@ title: 首页
 heroImage: 'https://gitlab.unde.site/uploads/-/system/appearance/logo/1/DE36B41263F10D046C9449C45B69DF67.png'
 actions:
   - text: 阅读文档
-    link: /main.html
+    link: /guide/main.html
     type: primary
 
 
