@@ -1,4 +1,4 @@
-import { defaultTheme } from '@vuepress/theme-default'
+﻿import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { markdownHintPlugin } from '@vuepress/plugin-markdown-hint'
@@ -11,12 +11,12 @@ export default defineUserConfig({
   description: 'GXU 教务系统常用功能全适配，包括个人课表、考试信息、考试成绩等',
 
   theme: defaultTheme({
-    logo: 'https://gitlab.unde.site/uploads/-/system/appearance/logo/1/DE36B41263F10D046C9449C45B69DF67.png',
+    logo: '/assets/ic_launcher.png',
 
     navbar: [
       { text: '首页', link: '/' },
       { text: '基础教程', link: '/guide/main.html' },
-      { text: '工具使用', link: '/tools/toolUse.html' },
+      { text: '工具使用', link: '/tools/classInfo.html' },
       { text: '软件设置', link: '/settings/appSet.html' },
       { text: '常见问题', link: '/QA.html' },
       { text: '声明', link: '/statement.html' },
@@ -24,30 +24,29 @@ export default defineUserConfig({
     ],
 
     sidebar: [
-        {text:'基础教程',link:'/guide/main.html',},
+      { text: '基础教程', link: '/guide/main.html' },
       {
-        text:'工具箱',
-        collapsible:true,
-        children:[
-          {text:'信息查询',link:'/tools/message.md'},
-          {text:'实践课',link:'/tools/act.md'},
-          //{text:'通知',link:'/tools/notice.md'},
-          {text:'其他',link:'/tools/other.md'},
-
-        ]
+        text: '工具箱',
+        collapsible: true,
+        children: [
+          { text: '课程信息', link: '/tools/classInfo.html' },
+          { text: '考试信息', link: '/tools/examInfo.html' },
+          { text: '通知信息', link: '/tools/noticeInfo.html' },
+          { text: '其他信息', link: '/tools/otherInfo.html' },
+          {text: '其他工具', link: '/tools/otherTools.html'}
+        ],
       },
-      {text:'软件设置',link:'/settings/appSet.html'},
-      {text:'常见问题',link:'/QA.html'},
-      {text:'声明', link:'/statement.html'},
-      {text:'版本日志',link:'/logs.html'},
-
-
+      { text: '软件设置', link: '/settings/appSet.html' },
+      { text: '常见问题', link: '/QA.html' },
+      { text: '声明', link: '/statement.html' },
+      { text: '版本日志', link: '/logs.html' },
     ],
   }),
-  plugins:[
+  plugins: [
     markdownHintPlugin({
-      hint:true,
-      alert:true,}),
+      hint: true,
+      alert: true,
+    }),
   ],
   bundler: viteBundler(),
 })
