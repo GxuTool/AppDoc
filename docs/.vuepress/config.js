@@ -16,8 +16,7 @@ export default defineUserConfig({
     navbar: [
       { text: '首页', link: '/' },
       { text: '基础教程', link: '/guide/main.html' },
-      { text: '工具使用', link: '/tools/classInfo.html' },
-      { text: '软件设置', link: '/settings/appSet.html' },
+      { text: '软件设置', link: '/setting/appSet.html' },
       { text: '常见问题', link: '/QA.html' },
       { text: '声明', link: '/statement.html' },
       { text: '版本日志', link: '/logs.html' },
@@ -36,7 +35,7 @@ export default defineUserConfig({
           {text: '其他工具', link: '/tools/otherTools.html'}
         ],
       },
-      { text: '软件设置', link: '/settings/appSet.html' },
+      { text: '软件设置', link: '/setting/appSet.html' },
       { text: '常见问题', link: '/QA.html' },
       { text: '声明', link: '/statement.html' },
       { text: '版本日志', link: '/logs.html' },
