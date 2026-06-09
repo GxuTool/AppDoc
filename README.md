@@ -10,7 +10,7 @@
 
 ## Getting Started
 
-> **Note**: 请先确保本地已经安装 Node.js（最好是64位版本） 和 npm。
+> **Note**: 请先确保本地已经安装 Node.js LTS版本 和 npm。
 
 ### Step 1: 安装依赖
 
@@ -78,9 +78,9 @@ npm run docs:build
 文档图片建议暂时先统一放在：
 
 ```text
-docs/asset
+docs/assets
 ```
-以后可能会放在服务器上
+尽量转换成webp，图标或者其他较小的图片可以不用转换，以后可能会放在服务器上
 
 
 例如当前 Markdown 文件位于：
@@ -140,4 +140,4 @@ docs/.vuepress/config.js
 ## 注意事项
 
 * 对自己的修改不够自信的可以自己拉一个分支提交
-* 图片资源应尽量压缩，避免体积过大，格式尽量使用 `wedp` 格式，[压缩网站](https://squoosh.app/)。
+* 图片资源应尽量压缩，避免体积过大，格式尽量使用 `webp` 格式，[压缩网站](https://squoosh.app/)。
