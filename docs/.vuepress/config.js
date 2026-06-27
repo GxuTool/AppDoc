@@ -38,6 +38,7 @@ export default defineUserConfig({
       },
       { text: '软件设置', link: '/setting/appSet.html' },
       { text: '常见问题', link: '/QA.html' },
+      {text:'联系我们',link:'/contact.html'},
       { text: '声明', link: '/statement.html' },
       { text: '版本日志', link: '/logs.html' },
     ],
