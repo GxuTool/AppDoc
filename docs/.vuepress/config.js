@@ -11,6 +11,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+  ],
 
   title: '西大工具箱-移动教务（暂名）',
   description: 'GXU 教务系统常用功能全适配，包括个人课表、考试信息、考试成绩等',
