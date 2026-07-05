@@ -1,7 +1,7 @@
 ---
 home: true
 title: 首页
-heroImage: '/assets/ic_launcher.png'
+heroImage: '/ic_launcher.png'
 actions:
   - text: 阅读文档
     link: /guide/main.html
