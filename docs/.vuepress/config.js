@@ -14,7 +14,6 @@ export default defineUserConfig({
     logo: '/assets/ic_launcher.png',
 
 
-
     sidebar: [
       { text: '基础教程', link: '/guide/main.html' },
       {
