@@ -13,15 +13,7 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: '/assets/ic_launcher.png',
 
-    navbar: [
-      { text: '首页', link: '/' },
-      { text: '基础教程', link: '/guide/main.html' },
-      { text: '工具使用', link: '/tools/' },
-      { text: '软件设置', link: '/setting/appSet.html' },
-      { text: '常见问题', link: '/QA.html' },
-      { text: '声明', link: '/statement.html' },
-      { text: '版本日志', link: '/logs.html' },
-    ],
+
 
     sidebar: [
       { text: '基础教程', link: '/guide/main.html' },
