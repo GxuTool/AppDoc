@@ -60,6 +60,7 @@ npm run docs:build
 * `docs/QA.md`: 常见问题。
 * `docs/contact.md`: 联系我们。
 * `docs/statement.md`: 声明与免责声明。
+* `docs/development/roadmap.md`: 开发计划与已知问题。
 * `docs/logs.md`: 版本日志。
 * `docs/asset/`: 文档图片资源。
 * `docs/.vuepress/config.js`: VuePress 配置文件。
