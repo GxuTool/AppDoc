@@ -44,19 +44,25 @@ npm run docs:build
 
 ## 文档修改说明
 
-文档正文主要位于 [docs/](cci:9://file:///D:/Android/toolDoc/docs:0:0-0:0) 目录。
+文档正文主要位于 `docs/` 目录。
 
 常用文件说明：
 
-* [docs/README.md](cci:7://file:///D:/Android/toolDoc/docs/README.md:0:0-0:0): 文档网站首页。
-* [docs/guide/](cci:9://file:///D:/Android/toolDoc/docs/guide:0:0-0:0): 基础教程。
-* [docs/tools/](cci:9://file:///D:/Android/toolDoc/docs/tools:0:0-0:0): 工具使用说明。
-* [docs/settings/](cci:9://file:///D:/Android/toolDoc/docs/settings:0:0-0:0): 软件设置说明。
-* [docs/QA.md](cci:7://file:///D:/Android/toolDoc/docs/QA.md:0:0-0:0): 常见问题。
-* [docs/statement.md](cci:7://file:///D:/Android/toolDoc/docs/statement.md:0:0-0:0): 声明。
-* [docs/logs.md](cci:7://file:///D:/Android/toolDoc/docs/logs.md:0:0-0:0): 版本日志。
+* `docs/README.md`: 文档网站首页。
+* `docs/guide/main.md`: 基础教程（登录、首页、工具箱概览、个性化设置）。
+* `docs/tools/classInfo.md`: 课程信息（课表查询、导出课表、GPA 计算器、选课信息等）。
+* `docs/tools/examInfo.md`: 考试信息（考试考场查询、考试成绩查询）。
+* `docs/tools/noticeInfo.md`: 通知信息（调课信息、调休信息、法定节假日）。
+* `docs/tools/otherInfo.md`: 其他信息（考勤信息查询、教师信息查询）。
+* `docs/tools/evaluation.md`: 教学评价（期末学生评价、一键评价）。
+* `docs/tools/otherTools.md`: 其他工具（学校文件、地图导航、教学楼平面图、全校实时课表）。
+* `docs/setting/appSet.md`: 软件设置（账号管理、主题设置、软件信息）。
+* `docs/QA.md`: 常见问题。
+* `docs/contact.md`: 联系我们。
+* `docs/statement.md`: 声明与免责声明。
+* `docs/logs.md`: 版本日志。
 * `docs/asset/`: 文档图片资源。
-* [docs/.vuepress/config.js](cci:7://file:///D:/Android/toolDoc/docs/.vuepress/config.js:0:0-0:0): VuePress 配置文件。
+* `docs/.vuepress/config.js`: VuePress 配置文件。
 
 ## 简单写作规范
 
@@ -71,6 +77,7 @@ npm run docs:build
 * 文件名建议使用小写英文和短横线。
 * 图片文件名建议使用英文，避免空格和特殊符号。
 * 涉及考试、成绩、选课、考勤等重要信息时，应提醒用户以学校官方系统为准。
+* 涉及开发者责任的内容应保持谨慎，避免过度承诺。
 
 
 ## 图片引用规范
@@ -116,9 +123,12 @@ docs/.vuepress/config.js
   text: '工具箱',
   collapsible: true,
   children: [
-    { text: '信息查询', link: '/tools/message.html' },
-    { text: '实践课', link: '/tools/act.html' },
-    { text: '其他', link: '/tools/other.html' },
+    { text: '课程信息', link: '/tools/classInfo.html' },
+    { text: '考试信息', link: '/tools/examInfo.html' },
+    { text: '通知信息', link: '/tools/noticeInfo.html' },
+    { text: '其他信息', link: '/tools/otherInfo.html' },
+    { text: '教学评价', link: '/tools/evaluation.html' },
+    { text: '其他工具', link: '/tools/otherTools.html' },
   ],
 }
 ```

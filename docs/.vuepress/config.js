@@ -15,8 +15,8 @@ export default defineUserConfig({
     ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
 
-  title: '西大工具箱-移动教务（暂名）',
-  description: 'GXU 教务系统常用功能全适配，包括个人课表、考试信息、考试成绩等',
+  title: '西大工具箱',
+  description: 'GXU 教务系统常用功能全适配，包括个人课表、考试信息、考试成绩、考勤查询、教学评价等',
 
   theme: defaultTheme({
     logo: '/ic_launcher.png', // publicDir 中的文件，构建后在 dist 根目录
@@ -32,12 +32,13 @@ export default defineUserConfig({
           { text: '考试信息', link: '/tools/examInfo.html' },
           { text: '通知信息', link: '/tools/noticeInfo.html' },
           { text: '其他信息', link: '/tools/otherInfo.html' },
-          {text: '其他工具', link: '/tools/otherTools.html'}
+          { text: '教学评价', link: '/tools/evaluation.html' },
+          { text: '其他工具', link: '/tools/otherTools.html' },
         ],
       },
       { text: '软件设置', link: '/setting/appSet.html' },
       { text: '常见问题', link: '/QA.html' },
-      {text:'联系我们',link:'/contact.html'},
+      { text: '联系我们', link: '/contact.html' },
       { text: '声明', link: '/statement.html' },
       { text: '版本日志', link: '/logs.html' },
     ],
