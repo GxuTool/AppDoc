@@ -90,6 +90,8 @@
 
 ## 校选课查漏
 
+<img src="../assets/toolUse/schoolClass.webp" alt="校选课查漏" width="200">
+
 进入工具箱 → 信息查询 → 校选课查漏，是一个计算校选课学分是否达标的功能。
 
 **功能原理：**

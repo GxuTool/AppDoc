@@ -19,7 +19,7 @@ export default defineUserConfig({
   description: 'GXU 教务系统常用功能全适配，包括个人课表、考试信息、考试成绩、考勤查询、教学评价等',
 
   theme: defaultTheme({
-    logo: '/ic_launcher.png', // publicDir 中的文件，构建后在 dist 根目录
+    logo: '/icon/ic_launcher.png', // publicDir 中的文件，构建后在 dist 根目录
 
 
     sidebar: [
