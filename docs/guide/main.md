@@ -13,7 +13,9 @@
 1. 打开 APP → 底部标签栏点击「设置」
 2. 点击「教务账号设置」进入登录页面
 
-<img src="../assets/baseInfo/JwLogin.webp" alt="教务登录" width="200">
+<div style="width: 200px; height: 416px; overflow: hidden;">
+  <img src="../assets/baseInfo/JwLogin.webp" alt="教务登录" style="width: 800px; margin-top: -15px;">
+</div>
 
 3. 在「学号」输入框中输入你的教务系统学号
 4. 在「密码」输入框中输入教务系统密码（输入时默认隐藏，可点击右侧眼睛图标切换显示/隐藏）
@@ -89,7 +91,9 @@
 
 ### 日程表课表
 
-<img src="../assets/baseInfo/dailyClass.webp" alt="日程课表" width="200">
+<div style="width: 205px; height: 430px; overflow: hidden;">
+<img src="../assets/baseInfo/dailyClass.webp" alt="日程课表"  style="width: 800px; margin-top: -17px;">
+</div>
 
 日程表是首页的核心功能，以表格形式展示一周的课程安排。
 
@@ -121,7 +125,9 @@
 
 **课程详情弹窗：**
 
-<img src="../assets/baseInfo/classInfo.webp" alt="课程详情" width="200">
+<div style="width:205px;height:415px;overflow: hidden;">
+<img src="../assets/baseInfo/classInfo.webp" alt="课程详情" style="width:800px;margin-top: -23px">
+</div>
 
 点击课程块后会弹出底部详情面板，显示以下信息：
 
