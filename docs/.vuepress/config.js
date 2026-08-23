@@ -36,7 +36,15 @@ export default defineUserConfig({
           { text: '其他工具', link: '/tools/otherTools.html' },
         ],
       },
-      { text: '软件设置', link: '/setting/appSet.html' },
+      {
+        text: '软件设置',
+        collapsible: true,
+        children: [
+          { text: '账号设置', link: '/setting/account.html' },
+          { text: '主题设置', link: '/setting/theme.html' },
+          { text: '软件信息', link: '/setting/app.html' },
+        ],
+      },
       { text: '常见问题', link: '/QA.html' },
       { text: '联系我们', link: '/contact.html' },
       { text: '声明', link: '/statement.html' },
