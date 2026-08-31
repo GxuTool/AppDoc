@@ -4,9 +4,10 @@
 
 当前工具主要分为以下几类：
 
-- [课程信息](../tools/classInfo.md)
-- [考试信息](../tools/examInfo.md)
-- [通知信息](../tools/otherInfo.md)
-- [其他工具](../tools/otherTools.md)
+- [信息查询](Infoquery.md)
+- [实践课](practice.md)
+- [通知信息](noticeInfo.md)
+- [教学评价](evaluation.md)
+- [其他工具](otherTools.md)
 
 

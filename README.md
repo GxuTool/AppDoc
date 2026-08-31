@@ -50,10 +50,9 @@ npm run docs:build
 
 * `docs/README.md`: 文档网站首页。
 * `docs/guide/main.md`: 基础教程（登录、首页、工具箱概览、个性化设置）。
-* `docs/tools/classInfo.md`: 课程信息（课表查询、导出课表、GPA 计算器、选课信息等）。
-* `docs/tools/examInfo.md`: 考试信息（考试考场查询、考试成绩查询）。
+* `docs/tools/Infoquery.md`: 信息查询（课表查询、导出课表、考试/成绩查询、绩点计算器、考勤信息、选课信息等）。
+* `docs/tools/practice.md`: 实践课（物理实验课信息查询）。
 * `docs/tools/noticeInfo.md`: 通知信息（调课信息、调休信息、法定节假日）。
-* `docs/tools/otherInfo.md`: 其他信息（考勤信息查询、教师信息查询）。
 * `docs/tools/evaluation.md`: 教学评价（期末学生评价、一键评价）。
 * `docs/tools/otherTools.md`: 其他工具（学校文件、地图导航、教学楼平面图、全校实时课表）。
 * `docs/setting/appSet.md`: 软件设置（账号管理、主题设置、软件信息）。
@@ -124,10 +123,9 @@ docs/.vuepress/config.js
   text: '工具箱',
   collapsible: true,
   children: [
-    { text: '课程信息', link: '/tools/classInfo.html' },
-    { text: '考试信息', link: '/tools/examInfo.html' },
+    { text: '信息查询', link: '/tools/Infoquery.html' },
+    { text: '实践课', link: '/tools/practice.html' },
     { text: '通知信息', link: '/tools/noticeInfo.html' },
-    { text: '其他信息', link: '/tools/otherInfo.html' },
     { text: '教学评价', link: '/tools/evaluation.html' },
     { text: '其他工具', link: '/tools/otherTools.html' },
   ],

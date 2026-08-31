@@ -1,7 +1,6 @@
 ﻿import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
-import { markdownHintPlugin } from '@vuepress/plugin-markdown-hint'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -12,7 +11,7 @@ export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/icon/favicon.ico' }],
   ],
 
   title: '西大工具箱',
@@ -28,10 +27,9 @@ export default defineUserConfig({
         text: '工具箱',
         collapsible: true,
         children: [
-          { text: '课程信息', link: '/tools/classInfo.html' },
-          { text: '考试信息', link: '/tools/examInfo.html' },
+          { text: '信息查询', link: '/tools/Infoquery.html' },
+          { text: '实践课', link: '/tools/practice.html' },
           { text: '通知信息', link: '/tools/noticeInfo.html' },
-          { text: '其他信息', link: '/tools/otherInfo.html' },
           { text: '教学评价', link: '/tools/evaluation.html' },
           { text: '其他工具', link: '/tools/otherTools.html' },
         ],
@@ -52,12 +50,6 @@ export default defineUserConfig({
       { text: '版本日志', link: '/logs.html' },
     ],
   }),
-  plugins: [
-    markdownHintPlugin({
-      hint: true,
-      alert: true,
-    }),
-  ],
   bundler: viteBundler({
     viteOptions: {
       // publicDir 中的文件会原样复制到 dist 根目录，供绝对路径引用
